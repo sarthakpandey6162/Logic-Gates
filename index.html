@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logic Gate Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Logic Gate Simulator</h2>
+
+    <label for="a">Input A (0 or 1):</label>
+    <input type="number" id="a" min="0" max="1" placeholder="Enter 0 or 1">
+
+    <label for="b">Input B (0 or 1):</label>
+    <input type="number" id="b" min="0" max="1" placeholder="Enter 0 or 1">
+
+    <label for="gate">Select Logic Gate:</label>
+    <select id="gate">
+      <option value="AND">AND</option>
+      <option value="OR">OR</option>
+      <option value="NOT A">NOT A</option>
+      <option value="NOT B">NOT B</option>
+      <option value="NAND">NAND</option>
+      <option value="NOR">NOR</option>
+      <option value="XOR">XOR</option>
+      <option value="XNOR">XNOR</option>
+    </select>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div class="output" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
